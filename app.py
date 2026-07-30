@@ -78,7 +78,7 @@ elif authentication_status == True:
     # 데이터를 최초 1회만 가져와 내 컴퓨터 메모리에 10분(600초) 동안 저장해두고 꺼내 씁니다.
     @st.cache_data(ttl=600)
     def load_google_sheet_data(worksheet_name):
-        gc = gspread.service_account(filename='secrets.json') # 구글 API 인증키 로드
+        gc = gspread.service_account_from_dict(dict(st.secrets)) # 구글 API 인증키 로드
         sheet_url = "https://docs.google.com/spreadsheets/d/1ZUNpBHN0uWQPLEvNjGam1FuNpm5znqV-yud-gWTl4pc/edit?gid=0#gid=0" 
         doc = gc.open_by_url(sheet_url)                      # 구글 시트 문서 열기
         worksheet = doc.worksheet(worksheet_name)             # 지정한 탭(시트1 또는 시트2) 선택
