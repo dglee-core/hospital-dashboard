@@ -1,0 +1,7 @@
+streamlit
+gspread
+pandas
+plotly
+streamlit-authenticator
+PyYAML
+bcrypt
