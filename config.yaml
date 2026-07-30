@@ -1,0 +1,18 @@
+credentials:
+  usernames:
+    user_a: #id
+      name: "A병원 원장님"
+      password: "123"
+      email: "a@hospital.com"
+      role: "A"
+      
+    user_b: #id
+      name: "B병원 원장님"
+      password: "123"
+      email: "b@hospital.com"
+      role: "B"
+      
+cookie:
+  expiry_days: 30
+  key: "random_signature_key"
+  name: "random_cookie_name"
