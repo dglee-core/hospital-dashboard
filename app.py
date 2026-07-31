@@ -37,7 +37,7 @@ authenticator = stauth.Authenticate(
 )
 
 # 3. 테스트를 쉽게 하실 수 있도록 로그인 창 안내 문구에 아이디 정보를 적어둡니다.
-st.info("💡 **[테스트용 로그인 정보 안내]**\n- **A병원 계정:** 아이디 `user_a` / 비밀번호 `123`\n- **B병원 계정:** 아이디 `user_b` / 비밀번호 `123`\n- **-구글시트 데이터: https://docs.google.com/spreadsheets/d/1ZUNpBHN0uWQPLEvNjGam1FuNpm5znqV-yud-gWTl4pc/edit?gid=0#gid=0")
+st.info("💡 **[테스트용 로그인 정보 안내]**\n- **A병원 계정:** 아이디 `user_a` / 비밀번호 `123`\n- **B병원 계정:** 아이디 `user_b` / 비밀번호 `123`\n- -구글시트 데이터: https://docs.google.com/spreadsheets/d/1ZUNpBHN0uWQPLEvNjGam1FuNpm5znqV-yud-gWTl4pc/edit?gid=0#gid=0")
 
 # 4. 메인 화면에 로그인 입력 폼(아이디, 패스워드 칸)을 띄웁니다.
 authenticator.login(location="main")
